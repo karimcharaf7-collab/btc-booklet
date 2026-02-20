@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.booklet-container {
+    background: linear-gradient(145deg, #FF4500, #FF6347);
+    width: 90vw;
+    max-width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tagline {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.product-placeholder {
+    font-size: 80px;
+    margin: 20px 0;
+    animation: bounce 2s infinite;
+}
+
+.page-number {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+}
+
+.nav-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.quiz {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.quiz p {
+    margin: 10px 0;
+}
+
+.quiz input {
+    margin-right: 10px;
+}
+ 
