@@ -7,53 +7,60 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="booklet-container">
-<div class="page active" id="page-1">
+<header>
+    <nav class="menu">
+        <button class="menu-item" id="menu1">📊 Crypto Calculator</button>
+        <button class="menu-item" id="menu2">📰 Latest News</button>
+        <button class="menu-item" id="menu3">👥 Community Forum</button>
+    </nav>
+</header>
+<main>
+<section class="page active" id="page-1">
 <h1>Digital Crypto Manual</h1>
 <p class="tagline">Bitcoin. It's your money!</p>
 <p>Welcome to the exciting world of digital currencies. Discover how Bitcoin and crypto can empower your financial future.</p>
 <div class="product-placeholder">₿</div>
-<p class="page-number">1</p>
-</div>
-<div class="page" id="page-2">
+<div class="page-indicator">1</div>
+</section>
+<section class="page" id="page-2">
 <h1>What is Bitcoin?</h1>
 <p>Bitcoin is the first decentralized digital currency, created in 2009 by Satoshi Nakamoto. It's not controlled by any government or bank—it's peer-to-peer money for the internet age.</p>
 <p>Think of it as digital gold: scarce, secure, and borderless. No middlemen, just you and your wallet.</p>
-<p class="page-number">2</p>
-</div>
-<div class="page" id="page-3">
+<div class="page-indicator">2</div>
+</section>
+<section class="page" id="page-3">
 <h1>The History of Bitcoin</h1>
 <p>Launched during the 2008 financial crisis, Bitcoin was designed to be a trustless system. Its blockchain technology ensures transparency and immutability.</p>
 <p>From pizza purchases to billion-dollar markets, Bitcoin has evolved into a global phenomenon. 🚀</p>
-<p class="page-number">3</p>
-</div>
-<div class="page" id="page-4">
+<div class="page-indicator">3</div>
+</section>
+<section class="page" id="page-4">
 <h1>How to Get Started</h1>
 <p>1. <strong>Choose a Wallet:</strong> Secure your keys with apps like Electrum or hardware like Ledger.</p>
 <p>2. <strong>Buy Bitcoin:</strong> Use exchanges like Coinbase or Binance. Start small!</p>
 <p>3. <strong>Learn & Invest:</strong> Educate yourself—crypto is volatile but rewarding.</p>
-<p class="page-number">4</p>
-</div>
-<div class="page" id="page-5">
+<div class="page-indicator">4</div>
+</section>
+<section class="page" id="page-5">
 <h1>Security Tips</h1>
 <p>🔒 Never share your private keys. Use 2FA. Store offline for large amounts.</p>
 <p>🛡️ Beware of scams—verify sources. DYOR (Do Your Own Research)!</p>
 <p>Your crypto is only as secure as your habits.</p>
-<p class="page-number">5</p>
-</div>
-<div class="page" id="page-6">
+<div class="page-indicator">5</div>
+</section>
+<section class="page" id="page-6">
 <h1>The Future of Crypto</h1>
 <p>Crypto is revolutionizing finance: DeFi, NFTs, and more. Bitcoin leads the way as digital money.</p>
 <p>Embrace the future—own your wealth, control your destiny. 🌐</p>
-<p class="page-number">6</p>
-</div>
-<div class="page" id="page-7">
+<div class="page-indicator">6</div>
+</section>
+<section class="page" id="page-7">
 <h1>Conclusion</h1>
 <p>Bitcoin isn't just currency—it's freedom. Start your journey today and join the decentralized revolution!</p>
 <p>Stay curious, stay secure. Happy hodling! 📈</p>
-<p class="page-number">7</p>
-</div>
-<div class="page" id="page-8">
+<div class="page-indicator">7</div>
+</section>
+<section class="page" id="page-8">
 <h1>Quick Quiz</h1>
 <p>Test your knowledge!</p>
 <div class="quiz">
@@ -64,13 +71,15 @@
     <button onclick="checkQuiz()">Submit</button>
     <p id="result"></p>
 </div>
-<p class="page-number">8</p>
-</div>
+<div class="page-indicator">8</div>
+</section>
+</main>
+<footer>
 <div class="nav-controls">
 <button id="prevBtn" disabled>Back</button>
 <button id="nextBtn">Next</button>
 </div>
-</div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
