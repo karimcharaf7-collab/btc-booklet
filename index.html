@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Crypto Manual</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Crypto Manual</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
     <nav class="menu">
         <button class="menu-item" id="menu1">📊 Crypto Calculator</button>
@@ -14,73 +15,78 @@
         <button class="menu-item" id="menu3">👥 Community Forum</button>
     </nav>
 </header>
+
 <main>
-<section class="page active" id="page-1">
-<h1>Digital Crypto Manual</h1>
-<p class="tagline">Bitcoin. It's your money!</p>
-<p>Welcome to the exciting world of digital currencies. Discover how Bitcoin and crypto can empower your financial future.</p>
-<div class="product-placeholder">₿</div>
-<div class="page-indicator">1</div>
-</section>
-<section class="page" id="page-2">
-<h1>What is Bitcoin?</h1>
-<p>Bitcoin is the first decentralized digital currency, created in 2009 by Satoshi Nakamoto. It's not controlled by any government or bank—it's peer-to-peer money for the internet age.</p>
-<p>Think of it as digital gold: scarce, secure, and borderless. No middlemen, just you and your wallet.</p>
-<div class="page-indicator">2</div>
-</section>
-<section class="page" id="page-3">
-<h1>The History of Bitcoin</h1>
-<p>Launched during the 2008 financial crisis, Bitcoin was designed to be a trustless system. Its blockchain technology ensures transparency and immutability.</p>
-<p>From pizza purchases to billion-dollar markets, Bitcoin has evolved into a global phenomenon. 🚀</p>
-<div class="page-indicator">3</div>
-</section>
-<section class="page" id="page-4">
-<h1>How to Get Started</h1>
-<p>1. <strong>Choose a Wallet:</strong> Secure your keys with apps like Electrum or hardware like Ledger.</p>
-<p>2. <strong>Buy Bitcoin:</strong> Use exchanges like Coinbase or Binance. Start small!</p>
-<p>3. <strong>Learn & Invest:</strong> Educate yourself—crypto is volatile but rewarding.</p>
-<div class="page-indicator">4</div>
-</section>
-<section class="page" id="page-5">
-<h1>Security Tips</h1>
-<p>🔒 Never share your private keys. Use 2FA. Store offline for large amounts.</p>
-<p>🛡️ Beware of scams—verify sources. DYOR (Do Your Own Research)!</p>
-<p>Your crypto is only as secure as your habits.</p>
-<div class="page-indicator">5</div>
-</section>
-<section class="page" id="page-6">
-<h1>The Future of Crypto</h1>
-<p>Crypto is revolutionizing finance: DeFi, NFTs, and more. Bitcoin leads the way as digital money.</p>
-<p>Embrace the future—own your wealth, control your destiny. 🌐</p>
-<div class="page-indicator">6</div>
-</section>
-<section class="page" id="page-7">
-<h1>Conclusion</h1>
-<p>Bitcoin isn't just currency—it's freedom. Start your journey today and join the decentralized revolution!</p>
-<p>Stay curious, stay secure. Happy hodling! 📈</p>
-<div class="page-indicator">7</div>
-</section>
-<section class="page" id="page-8">
-<h1>Quick Quiz</h1>
-<p>Test your knowledge!</p>
-<div class="quiz">
-    <p>1. What year was Bitcoin created?</p>
-    <input type="radio" name="q1" value="2008"> 2008<br>
-    <input type="radio" name="q1" value="2009"> 2009<br>
-    <input type="radio" name="q1" value="2010"> 2010<br>
-    <button onclick="checkQuiz()">Submit</button>
-    <p id="result"></p>
-</div>
-<div class="page-indicator">8</div>
-</section>
+    <section class="page active" id="page-1">
+        <h1>Digital Crypto Manual</h1>
+        <p class="tagline">Bitcoin. It's your money!</p>
+        <p>Welcome to the exciting world of digital currencies. Discover how Bitcoin and crypto can empower your financial future.</p>
+        <div class="product-placeholder">₿</div>
+        <div class="page-indicator">1</div>
+    </section>
+
+    <section class="page" id="page-2">
+        <h1>What is Bitcoin?</h1>
+        <p>Bitcoin is the first decentralized digital currency, created in 2009 by Satoshi Nakamoto. It's not controlled by any government or bank.</p>
+        <p>Think of it as digital gold: scarce, secure, and borderless.</p>
+        <div class="page-indicator">2</div>
+    </section>
+
+    <section class="page" id="page-3">
+        <h1>The History</h1>
+        <p>Launched during the 2008 financial crisis, Bitcoin was designed to be a trustless system. Its blockchain ensures transparency.</p>
+        <div class="page-indicator">3</div>
+    </section>
+
+    <section class="page" id="page-4">
+        <h1>How to Get Started</h1>
+        <p>1. <strong>Choose a Wallet:</strong> Secure your keys.<br>
+           2. <strong>Buy Bitcoin:</strong> Use trusted exchanges.<br>
+           3. <strong>Learn:</strong> Crypto is volatile but rewarding.</p>
+        <div class="page-indicator">4</div>
+    </section>
+
+    <section class="page" id="page-5">
+        <h1>Security Tips</h1>
+        <p>🔒 Never share private keys. Use 2FA.<br>
+           🛡️ Beware of scams—Always DYOR!</p>
+        <div class="page-indicator">5</div>
+    </section>
+
+    <section class="page" id="page-6">
+        <h1>The Future</h1>
+        <p>Crypto is revolutionizing finance: DeFi, NFTs, and more. Bitcoin leads the way.</p>
+        <div class="page-indicator">6</div>
+    </section>
+
+    <section class="page" id="page-7">
+        <h1>Conclusion</h1>
+        <p>Bitcoin is freedom. Start your journey today and join the decentralized revolution!</p>
+        <div class="page-indicator">7</div>
+    </section>
+
+    <section class="page" id="page-8">
+        <h1>Quick Quiz</h1>
+        <p>Test your knowledge!</p>
+        <div class="quiz">
+            <p>1. What year was Bitcoin created?</p>
+            <label><input type="radio" name="q1" value="2008"> 2008</label><br>
+            <label><input type="radio" name="q1" value="2009"> 2009</label><br>
+            <label><input type="radio" name="q1" value="2010"> 2010</label><br>
+            <button type="button" onclick="checkQuiz()">Submit</button>
+            <p id="result"></p>
+        </div>
+        <div class="page-indicator">8</div>
+    </section>
 </main>
+
 <footer>
-<div class="nav-controls">
-<button id="prevBtn" disabled>Back</button>
-<button id="nextBtn">Next</button>
-</div>
+    <div class="nav-controls">
+        <button id="prevBtn" disabled>Back</button>
+        <button id="nextBtn">Next</button>
+    </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
- 
