@@ -121,3 +121,22 @@ button:disabled {
     .menu-item { font-size: 11px; padding: 8px 12px; }
     h1 { font-size: 20px; }
 }
+
+.product-logo {
+    width: 120px; /* Adjust size as you like */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)); /* Gives it a gold glow */
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* We'll refine your bounce animation to be smoother for an image */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
