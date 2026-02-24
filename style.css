@@ -63,15 +63,14 @@ main {
     display: flex;
 }
 
-/* 4. The New Logo Styling */
+/* 4. The New Logo Styling - NOW SHRUNK */
 .product-logo {
-    width: 120px;
+    width: 45px;      /* Small, professional icon size */
     height: auto;
-    margin: 30px auto;
+    margin: 15px auto;
     display: block;
-    /* This creates the gold glow effect */
-    filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.6)); 
-    animation: bounce 2.5s infinite ease-in-out;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6)); 
+    animation: bounce 1.8s infinite ease-in-out;
 }
 
 .page-indicator {
@@ -119,13 +118,13 @@ button:disabled {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* One smooth bounce animation to rule them all */
+/* Refined bounce for a small icon */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-8px); /* Subtle float */
     }
 }
 
@@ -134,5 +133,8 @@ button:disabled {
     .menu { gap: 10px; padding: 10px; }
     .menu-item { font-size: 11px; padding: 8px 12px; }
     h1 { font-size: 22px; }
-    .product-logo { width: 100px; } /* Slightly smaller on phones */
+    .product-logo { 
+        width: 35px; /* Even smaller for mobile screens */
+        margin: 10px auto;
+    } 
 }
